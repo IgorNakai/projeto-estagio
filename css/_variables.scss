@@ -1,0 +1,61 @@
+/* RESPONSIVE */
+@mixin breakpoint($point) {
+    @if $point == desktop {
+      @media (min-width: rem(1200)) { 
+          @content; 
+        }
+   }
+    @else if $point == laptop {
+      @media (min-width: rem(1024)) { 
+          @content; 
+        }
+   }
+     @else if $point == tablet {
+      @media (min-width: rem(768)) { 
+          @content; 
+        }
+   }
+    @else if $point == phablet {
+      @media (min-width: rem(425))  { 
+          @content; 
+        }
+   }
+   @else if $point == mobileonly {
+      @media (max-width: rem(32))  { 
+          @content; 
+        }
+ 
+   }
+ }
+/* RESPONSIVE FIM*/
+/* ------------------------------ */
+/* LARGURA DO SITE */
+@mixin maxwidth {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+/* LARGURA DO SITE FIM*/
+/* ------------------------------ */
+/* PIXEL PARA REM */
+@function rem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+/* PIXEL PARA REM  FIM*/
+/* ------------------------------ */
+/* RESETAR O BODY */ 
+@mixin pagereset {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* RESETAR O BODY FIM*/
+/* CORES */ 
+$color: #F44336;
+$color1: #F38981;
+$color2: #000000;
+$color3: #606060;
+$color4: #F2F2F2;
+$color5: #FFFFFF;
+/* CORES END*/ 

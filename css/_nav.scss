@@ -1,0 +1,42 @@
+@import 'variables';
+
+
+.nav{
+    grid-area: nav;
+    background-color: $color5;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .logo-nav,
+        .search-nav{
+            a{
+                font-size: rem(25);
+                padding: rem(16);
+            }
+        }
+        .logo-nav{
+            a{
+                color: $color;
+                i{
+                    padding-right: rem(16);
+                }
+            }
+        }
+        .search-nav{
+            a{
+                color: $color3;
+            }
+        }
+    }
+    @include breakpoint (tablet){
+        &__content{
+            @include maxwidth;
+            .logo-nav,
+            .search-nav{
+                padding: rem(16);
+            }
+        }
+    }
+}
