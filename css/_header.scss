@@ -20,6 +20,7 @@
                         align-items: center;
                         color: white;
                         font-weight: 200;
+                        transition: .3s linear;
                         i{
                             padding-right: rem(15);
                         }
@@ -51,11 +52,16 @@
                 button{
                     margin-top: rem(16);
                     padding: rem(10);
-                    width: 65%;
+                    width: 50%;
                     background-color: $color3;
                     color: $color5;
                     border: none;
                     outline: none;
+                    transition: .3s linear;
+                    &:hover{
+                        cursor: pointer;
+                        color: $color6;
+                    }
                 }
             }
         }

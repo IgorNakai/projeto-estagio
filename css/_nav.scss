@@ -9,11 +9,17 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        padding: rem(10);
         .logo-nav,
         .search-nav{
             a{
                 font-size: rem(25);
                 padding: rem(16);
+                transition: .3s linear;
+                &:hover{
+                    cursor: pointer;
+                    color: $color7;
+                }
             }
         }
         .logo-nav{
