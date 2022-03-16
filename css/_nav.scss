@@ -16,10 +16,7 @@
                 font-size: rem(25);
                 padding: rem(16);
                 transition: .3s linear;
-                &:hover{
-                    cursor: pointer;
-                    color: $color7;
-                }
+                
             }
         }
         .logo-nav{
@@ -33,6 +30,10 @@
         .search-nav{
             a{
                 color: $color3;
+                &:hover{
+                    cursor: pointer;
+                    color: $color7;
+                }
             }
         }
     }

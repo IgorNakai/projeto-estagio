@@ -35,6 +35,9 @@
                         bottom: rem(16);
                         left: rem(20);
                         color: $color5;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                     img{
                         width: 100%;

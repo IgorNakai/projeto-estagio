@@ -54,12 +54,6 @@
   transition: .3s linear;
 }
 
-.nav__content .logo-nav a:hover,
-.nav__content .search-nav a:hover {
-  cursor: pointer;
-  color: #606060a4;
-}
-
 .nav__content .logo-nav a {
   color: #F44336;
 }
@@ -70,6 +64,11 @@
 
 .nav__content .search-nav a {
   color: #606060;
+}
+
+.nav__content .search-nav a:hover {
+  cursor: pointer;
+  color: #606060a4;
 }
 
 @media (min-width: 48rem) {
@@ -327,6 +326,10 @@
   bottom: 1rem;
   left: 1.25rem;
   color: #FFFFFF;
+}
+
+.section__content .grid-items .grid-1-items .item-grid-1 p:hover {
+  text-decoration: underline;
 }
 
 .section__content .grid-items .grid-1-items .item-grid-1 img {
